@@ -1,12 +1,6 @@
 # Excel_VBA
 #Soluções em VBA planilha Método GTD
-#Explicação do código:
 
-#O código monitora as mudanças na planilha específica "0-Coisas".
-#Quando uma célula na coluna D é alterada para "Não", as colunas E e F na mesma linha são preenchidas com "-".
-#Quando uma célula na coluna E ou F é alterada para "Sim", as colunas J, L e N na mesma linha são preenchidas com "-".
-#Se uma célula na coluna F é alterada para "Sim", uma mensagem de caixa de diálogo é exibida e a célula na coluna G é selecionada.
-#Se uma célula na coluna G é alterada para "Incubar", "Eliminar" ou "Arquivar", as colunas correspondentes (J, L, N) na mesma linha são atualizadas conforme as regras #especificadas.
 
 Private Sub Worksheet_Change(ByVal Target As Range)
     Dim ws As Worksheet
